@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>Konstantin Grudnitskiy</title>
+    <link>http://grudnks.github.io</link>
+    <description>the Blog</description>
+    <pubDate>Sun, 19 Mar 2017 21:55:52 +0200</pubDate>
+    <item>
+      <title>Welcome to Jekyll!</title>
+      <link>http://grudnks.github.io/jekyll/update/2017/03/19/welcome-to-jekyll</link>
+      <description><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many diffe]]></description>
+      <pubDate>Sun, 19 Mar 2017 21:55:52 +0200</pubDate>
+      <guid>http://grudnks.github.io/jekyll/update/2017/03/19/welcome-to-jekyll</guid>
+      <dc:date>2017-03-19T21:55:52+02:00</dc:date>
+    </item>
+    <item>
+      <title>Test Post!</title>
+      <link>http://grudnks.github.io/2017/03/19/test-post</link>
+      <description><![CDATA[This is a test post on Jekyll тест русского языка]]></description>
+      <pubDate>Sun, 19 Mar 2017 00:00:00 +0200</pubDate>
+      <guid>http://grudnks.github.io/2017/03/19/test-post</guid>
+      <dc:date>2017-03-19T00:00:00+02:00</dc:date>
+    </item>
+    <dc:date>2017-03-19T21:55:52+02:00</dc:date>
+  </channel>
+</rss>
