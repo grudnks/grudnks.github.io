@@ -8,6 +8,10 @@ coverPhoto: "/assets/img/img_placeholder.png"
 This is a test article  
 And this test text here  
 <img src="{{ site.url }}/assets/img/img_placeholder.png">  
-{ coverPhoto }
+```python
+"""Highlight Test"""
+def test:
+    pass
+```
 
 
