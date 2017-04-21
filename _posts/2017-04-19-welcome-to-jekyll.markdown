@@ -6,7 +6,7 @@ categories: test
 coverPhoto: "/assets/img/img_placeholder.png"
 ---
 This is a test article  
-And this test text here  
+And this `test` text here  
 <img src="{{ site.url }}/assets/img/img_placeholder.png">  
 ```python
 """Highlight Test"""
