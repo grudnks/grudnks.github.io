@@ -15,7 +15,7 @@ timezone: Europe/Istanbul
 paginateLabel: page
 paginate_path: "page/:num"
 permalink: /:categories/:year/:month/:day/:title
-baseurl: http://grudnks.github.io
+baseurl: https://grudnks.github.io
 
 # Includes
 addthisId: ""
