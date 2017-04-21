@@ -7,6 +7,6 @@ coverPhoto: "/assets/img/img_placeholder.png"
 ---
 This is a test article  
 And this test text here  
-<img src="{{ site.url }}{{ post.coverPhoto}}"> 
+<img src="{{ site.url }}{{ post.coverPhoto}}">  
 
 
