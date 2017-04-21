@@ -24,7 +24,7 @@ layout: htmlCompressor
 
 	<!-- Open Graph(Facebook, Pinterest) -->
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+	<meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">
 	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% elsif site.name %}{{ site.name }}{% endif %}">
 	<meta property="og:locale" content="{{ site.locale }}">
 	<meta property="og:site_name" content="{{ site.name }}">
@@ -33,7 +33,7 @@ layout: htmlCompressor
 	<!-- Twitter -->
 	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% elsif site.name %}{{ site.name }}{% endif %}">
 	<meta name="twitter:site" content="{{ site.name }}">
-	<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+	<meta name="twitter:url" content="{{ site.baseurl }}{{ page.url }}">
 	<meta name="twitter:creator" content="{{ site.author }}">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:description" content="{% if page.title %}{{ page.content | strip_html | slice: 0, 150 }}{% elsif site.description %}{{ site.description }}{% endif %}">
@@ -57,14 +57,14 @@ layout: htmlCompressor
 	{% if site.google != "" %}<meta name="google-site-verification" content="{{ site.google }}">{% endif %}
 
 	<!-- Favicon & RSS -->
-	<link rel="icon" href="{{ site.url }}/assets/img/favicon.ico">
-	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/rss.xml">
+	<link rel="icon" href="{{ site.baseurl }}/assets/img/favicon.ico">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/rss.xml">
 
 	<!-- CSS & JS files -->
-	<link rel="stylesheet" href="{{ site.url }}/assets/css/prod/style.min.css">
-	<script src="{{ site.url }}/assets/js/prod/prism.min.js"></script>
-	<script src="{{ site.url }}/assets/js/prod/fastclick.min.js"></script>
-	<script src="{{ site.url }}/assets/js/prod/init.min.js"></script>
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/prod/style.min.css">
+	<script src="{{ site.baseurl }}/assets/js/prod/prism.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/prod/fastclick.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/prod/init.min.js"></script>
 
 </head>
 <body>
@@ -130,9 +130,13 @@ layout: htmlCompressor
 				<div class="dtc h6">
 
 					<!-- Copyright -->
-					<a href="{{ site.url }}" class="h6">{{ site.name }}</a> &copy; {{ site.time | date: "%Y" }} &bull; All rights reserved.
+					<a href="{{ site.baseurl }}" class="h6">{{ site.name }}</a> &copy; {{ site.time | date: "%Y" }} &bull; {% if site.lang == "tr" %}Tüm hakları saklıdır{% else %}All rights reserved{% endif %}.
 					<br>
-					Proudly published with <a href="https://github.com/jekyll/jekyll" class="h6" target="_blank">Jekyll</a> using <a href="https://github.com/ozgrozer/dasper" class="h6" target="_blank">Dasper</a> theme.					
+					{% if site.lang == "tr" %}
+						<a href="https://github.com/jekyll/jekyll" class="h6" target="_blank">Jekyll</a> ile <a href="https://github.com/ozgrozer/dasper" class="h6" target="_blank">Dasper</a> teması kullanılarak oluşturulmuştur.
+					{% else %}
+						Proudly published with <a href="https://github.com/jekyll/jekyll" class="h6" target="_blank">Jekyll</a> using <a href="https://github.com/ozgrozer/dasper" class="h6" target="_blank">Dasper</a> theme.
+					{% endif %}
 
 				</div><!-- .dtc -->
 
