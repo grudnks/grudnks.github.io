@@ -8,8 +8,10 @@ locale: "RU"
 
 # Jekyll
 paginate: 10
-highlighter: none
 markdown: kramdown
+kramdown: 
+	syntax_highlighter_opts:
+		disable : true
 gems: [jekyll-paginate]
 timezone: Europe/Istanbul
 paginateLabel: page
